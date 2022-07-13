@@ -3,25 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 .title{
     width: 100%;
-    border-bottom: 2px solid green;
+    border: 2px solid black;
     text-align: center;
-}
-.title h1{
-    font-size: 100px;
-}
-.content-body{
-    background-color: blueviolet;
-    height: 89vh;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.todo-container{
-    width: 40vw;
-    height: 80vh;
     background-color: white;
+}
+.add-todo{
+    width: 80%;
+    background-color: white;
+    height: 90vh;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+.add-todo button{
+    height: 5%;
+    width: 20%;
 }
