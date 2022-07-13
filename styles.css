@@ -11,16 +11,40 @@ body{
     border: 2px solid black;
     text-align: center;
     background-color: white;
+    padding: 10px;
+    font-size: 30px;
 }
-.add-todo{
+.todo-list{
     width: 80%;
     background-color: white;
-    height: 90vh;
-    margin: auto;
+    height: 80vh;
+    margin: 10px auto auto auto;
     text-align: center;
     border-radius: 10px;
 }
+.todo-item{
+    font-size: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-bottom: 1px;
+}
+.add-todo{
+    width: 40%;
+    height: 5vh;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
 .add-todo button{
-    height: 5%;
+    height: 50%;
     width: 20%;
+    margin-right: 50px;
+}
+.add-todo input{
+    margin-left: 50px;
+    height: 50%;
 }

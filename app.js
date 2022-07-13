@@ -4,8 +4,10 @@ function addToDO(){
         alert("Please add text?")
     }
     else{
-        document.querySelector('.title').innerHTML += `
-        <p>${todo.value}</p>
+        document.querySelector('.todo-list').innerHTML += `
+        <p class="todo-item">${todo.value}</p>
+        <button class="delete-button">Delete</button>
     `;
+        //TODO: Create delete function
     }
 }
