@@ -1,4 +1,4 @@
-function addToDO(){
+const addToDO = () =>{
     let todo = document.querySelector('#add-item');
     if(todo.value == 0){
         alert("Please add text?")
@@ -6,8 +6,15 @@ function addToDO(){
     else{
         document.querySelector('.todo-list').innerHTML += `
         <p class="todo-item">${todo.value}</p>
-        <button class="delete-button">Delete</button>
+        <button class="delete-button" onclick="deleteEntry()">Delete</button>
     `;
-        //TODO: Create delete function
     }
+
+}
+const deleteEntry = () =>{
+    let curr = document.querySelector('.todo-item');
+    let dbutt = document.querySelector('.delete-button')
+
+    curr.remove();
+    dbutt.remove();
 }
